@@ -1,0 +1,397 @@
+*{
+    margin:0; padding:0; outline:none;
+}
+body,html{
+    height:100%;
+}
+body{
+    color:black; 
+    text-align:left; 
+    font-family: 'Rajdhani', sans-serif;
+    font-size:13px; 
+    font-weight:400;
+    background: #000000 url('./../img/pattern.jpg') repeat; 
+}
+
+/* headings */
+
+h1{ font-size:30px; color: black;text-align: left; font-weight: 500;}
+
+h2{ font-size:24px; color: #bc402f;text-align: left; margin-bottom: 6px;}
+h3{ font-size:20px; color: #bc402f;text-align: left; font-weight: 600; margin-bottom: 6px;}
+h4{font-size:18px;}
+
+p {
+    font-size: 18px;
+    color: black;
+    text-align: left;
+}
+
+p.patka {
+    font-size: 18px;
+    color: #656565;
+    text-align: left;
+    font-weight: 500;
+}
+
+p.grid {
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+}
+/* links */
+a{text-decoration:none; color:black;}
+a:hover{text-decoration:underline;}
+a.fill-link{
+    display: block;
+    width: 100%;
+    height: 100%;;
+
+}
+/* grids */
+[class*="grid_"]{float:left; margin:0px 0px 0px 1%; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+[class*="grid_"]:first-child{margin-left:0px;}
+.grid-no-margin [class*="grid_"]{margin-bottom:0px;}
+.grid_1{width:6.5%;}
+.grid_2{width:15%;}
+.grid_3{width:23.5%;}
+.grid_4{width:32%;}
+.grid_5{width:40.5%;}
+.grid_6{width:49%;}
+.grid_7{width:57.5%;}
+.grid_8{width:66%;}
+.grid_9{width:74.5%;}
+.grid_10{width:83%;}
+.grid_11{width:91.5%;}
+.grid_12{width:100%;}
+
+.clear{clear:both; display:block;}
+
+#header{ 
+    background: #000000 url('./../img/bg-red.jpg') repeat; 
+    width:100%; 
+    height: 475px;
+    position: relative;
+}
+
+#logo{
+    position: relative; 
+    margin: 0px auto;
+    padding-top: 30px;
+    width: 322px;
+    height: 124px; 
+    display: block;
+}
+
+#zare {
+    position: absolute; 
+        left: 50%;
+        
+    margin-left: -381px;
+    width: 762px;
+    height: 150px; 
+    display: block;
+    top: 30px;
+
+}
+
+.zare_vyp {
+    background: url('./../img/zare-transparent.png');
+    opacity:0;
+}
+
+.zare_zap {
+    background: url('./../img/zare.png');
+    opacity:1;
+    transition: opacity .2s linear;
+}
+
+#line_menu {
+    position: absolute; 
+    margin-left: -550px;
+    left: 50%;
+    margin-top: 26px;
+    width: 1097px;
+    height: 1px; 
+    display: block;
+}
+
+#main-menu{
+    font-size: 17px;
+    font-family: 'Roboto Slab', serif;
+    position: relative; 
+    margin: 0px auto;
+    margin-top: 20px;
+    width: 970px;
+    display: block;
+
+}
+#main-menu li{
+    position:relative;
+    display:inline-block;
+    margin: 0px auto;
+    margin-left:0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#main-menu li a{
+    display:inline-block; 
+    color:#ffffff;  
+    width: 189px;
+    height: 59px;
+    text-decoration:none;
+    padding-top: 18px;
+}
+
+#main-menu li.active{
+    color:#ffffff;
+    background:transparent;
+    background-image: url('../img/aktivni.png');
+    text-decoration:none;
+    width: 192px;
+    height: 59px;
+}
+
+#main-menu li.active a{
+    color:#ffffff;
+}
+
+#main-menu li a:hover{
+    color:#ffc3a3; 
+}
+
+#main-menu li.active a:hover{
+    color:#ffffff;
+}
+
+#content{ 
+    background: transparent; 
+
+    width:960px; 
+
+    position: relative; 
+    margin: 0px auto;
+
+    margin-top: -246px;
+    z-index: 2;
+}
+
+
+#panel{ 
+    background: url('./../img/panel1.png') no-repeat;
+    width:960px; 
+    height: 366px;
+    margin: 0px auto;
+    position: relative;
+
+    z-index: 3;
+
+    margin-bottom: 10px;
+
+}
+
+#obsah_panelu{ 
+    background: url('./../img/panel1.png') no-repeat;
+    width:400px; 
+    padding: 32px;
+    float: left;
+    position: relative;
+    z-index: 4;
+}
+
+.vertical_cara {
+
+    border-right: 1px solid #c0c0c0;
+}
+
+.padding_gridu {
+    padding: 0px 20px 0 20px;
+}
+
+.margin_top {
+    margin-top: 20px;
+}
+
+.ul {
+    margin: 10px 0px 10px 0px;
+    list-style-type: none;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 600;
+    color: #bc402f;
+}
+
+.ul li {
+    background-image: url('./../img/fajfka.png');
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    padding-left: 17px;
+}
+
+.button {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    padding: 8px 40px 14px 26px;
+
+    background: url('./../img/button1.png') no-repeat;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: #c7fff;
+    background: url('./../img/button1-hover.png') no-repeat;
+}
+
+#footer {
+    border-top: 1px solid #c0c0c0;
+    width:960px; 
+
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 10px 0px 10px 5px;
+}
+
+.copyright {
+    text-align: right;
+}
+
+.copygrid {
+    position: relative;
+    float: right;
+    margin-top: 20px;
+}
+
+
+/* posoubvátko */
+
+#pn_reference {
+    width: 920px;
+    overflow:hidden;
+}
+
+.HPreference {
+    display: block;
+    height: 180px;
+    position: relative;
+    width: 100%;
+}
+.HPreference .stred {
+    display: block;
+    height: 180px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 0px;
+    width: 960px;
+}
+.HPreference .stred .obsah {
+    display: block;
+    white-space: nowrap;
+}
+.HPreference .stred .obsah .reference {
+    background-image: url("images/bg_reference.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 180px;
+    margin: 0 5px 0 6px;
+    position: relative;
+    width: 170px;
+}
+.HPreference .stred .obsah .reference h2 {
+    color: #e4e4e4;
+    display: block;
+    font-size: 22px;
+    left: -212px;
+    line-height: 40px;
+    position: absolute;
+    text-align: right;
+    top: 190px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    width: 400px;
+}
+.HPreference .stred .obsah .reference .logo {
+    display: table-cell;
+    height: 0px;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+    width: 170px;
+}
+.HPreference .stred .obsah .reference .text {
+    background-image: url("images/tecky.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-size: 16px;
+    font-style: italic;
+    height: 110px;
+    padding: 10px 15px 30px;
+    text-align: center;
+    white-space: normal;
+}
+.HPreference .stred .obsah .reference .body {
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.HPreference .stred .obsah .reference .body li {
+    background-image: url("images/splneno_ico.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: 'Shadows Into Light Two',cursive;
+    font-size: 20px;
+    padding-left: 28px;
+}
+.HPreference .stred .obsah .reference .bt_detail {
+    background-image: url("images/bt_detailReference.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: block;
+    font-size: 18px;
+    height: 30px;
+    left: 0px;
+    line-height: 30px;
+    position: relative;
+    text-align: center;
+    top: 16px;
+    width: 170px;
+}
+.HPreference .stred .obsah .reference:hover {
+    background-image: url("images/bg_reference_act.png");
+}
+.HPreference .stred .obsah .reference:hover .bt_detail {
+    background-image: url("images/bt_detailReference_act.png");
+}
+.HPreference .bt_ref_leva {
+    background-image: url("./../img/arrow-l.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 29px;
+    left: 0;
+    position: absolute;
+    top: 82px;
+    width: 14px;
+}
+.HPreference .bt_ref_prava {
+    background-image: url("./../img/arrow-r.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 29px;
+    position: absolute;
+    right: 0;
+    top: 82px;
+    width: 14px;
+}
+.HPreference .bt_ref_leva:hover {
+        background-image: url("./../img/arrow-l-hover.png");
+}
+.HPreference .bt_ref_prava:hover {
+        background-image: url("./../img/arrow-r-hover.png");
+}

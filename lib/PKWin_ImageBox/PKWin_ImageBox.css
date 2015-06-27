@@ -1,0 +1,14 @@
+﻿.PKWinImageBox_mask                   { background-color:Black; z-index:10000; display:block; position:fixed; top:0px; left:0px; opacity: .9; filter: alpha(opacity=90); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; }
+.PKWinImageBox_content                { display:block; z-index:10001; position:absolute; top:0px; left:0px; }
+.PKWinImageBox_content .loader        { position:absolute; color:White; left:50%; top:50%; line-height:64px; text-align:center; margin:-32px 0px 0px -32px; background-image:url('images/loader_img.gif'); display:block; width:64px; height:64px; background-position:center center; background-repeat:no-repeat; }
+.PKWinImageBox_content .loadingInfo   { color:White; position:fixed; left:-100px; top:60px; width:99px; height:64px; text-align:center; line-height:40px; background-image:url('images/loadingInfo.png'); background-position:center center; background-repeat:no-repeat; }
+.PKWinImageBox_content .bt_left       { position:absolute; z-index:10004; left:0px; top:50%; margin:-120px 0px; background-image:url('images/left.png'); display:block; width:144px; height:244px; background-position:center center; cursor:pointer; background-repeat:no-repeat; }
+.PKWinImageBox_content .bt_right      { position:absolute; z-index:10004; right:0px; top:50%; margin:-120px 0px; background-image:url('images/right.png'); display:block; width:140px; height:240px; background-position:center center; cursor:pointer; background-repeat:no-repeat; }
+.PKWinImageBox_content .bt_close      { position:absolute; z-index:10004; right:5px; top:8px; background-image:url('images/close.png'); display:block; width:24px; height:24px; background-position:center center; cursor:pointer; background-repeat:no-repeat; }
+.PKWinImageBox_content img            { position:absolute; z-index:10002; }
+.PKWinImageBox_content .count         { position:absolute; height:37px; width:107px; color:#FF9900; text-align:center; line-height:37px; font-size:15px; z-index:10004; top:0px; left:0px; background-image:url('images/count107x37.png'); background-repeat:repeat; background-position:center center; }
+.PKWinImageBox_content .info          { position:absolute; height:130px; text-align:left !important; max-width:500px; padding:10px 80px 10px 30px; z-index:10005; bottom:60px; left:-650px; background-image:url('images/info_bg.png'); background-repeat:repeat; background-position:center right; }
+.PKWinImageBox_content .info h1       { font-size:18px; color:#FF9900; text-align:left !important; }
+.PKWinImageBox_content .info h2       { font-size:14px; color:White; text-align:left !important; }
+.PKWinImageBox_content .info .close   { width:16px; height:16px; background-image:url('images/close_info.png'); background-position:center center; background-repeat:no-repeat; cursor:pointer; float:right; position:relative; left:50px; }
+
